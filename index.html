@@ -1,40 +1,110 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adens Law Firm</title>
-  </head>
-  <body>
-    <div id="app">
-      
-      <!-- NAVBAR -->
-      <nav class="'w-full flex items-center justify-between bg-neutral-800 py-4 px-8 max-sm:p-4">
-        <div class="flex justify-start items-center">
-          <img src="/logo.jpg" alt="aden's logo" class=" w-36 min-[2000px]:w-52 max-sm:w-28" />
-        </div>
 
-        <ul class='flex flex-1 justify-center items-center list-none max-md:hidden'>
-          <li class='text-base my-0 mx-4 cursor-pointer hover:text-gray-700 leading-7 font-sans font-normal text-white'>
-            <a href="#">Home</a>
-          </li>
-          <li class='text-base my-0 mx-4 cursor-pointer hover:text-gray-700 leading-7 font-sans font-normal text-white'>
-            <a href="#">About</a>
-          </li>
-          <li class='text-base my-0 mx-4 cursor-pointer hover:text-gray-700 leading-7 font-sans font-normal text-white'>
-            <a href="#">Menu</a>
-          </li>
-          <li class='text-base my-0 mx-4 cursor-pointer hover:text-gray-700 leading-7 font-sans font-normal text-white'>
-            <a href="#">Contact</a>
-          </li>
-          <li class='text-base my-0 mx-4 cursor-pointer hover:text-gray-700 leading-7 font-sans font-normal text-white'>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aden's Law Firm</title>
+</head>
+
+<body>
+  <div id="app" class="bg-ground font-rubik">
+
+    <!-- NAVBAR -->
+    <nav class="'w-full flex items-center justify-between bg-ground py-4 px-8 max-sm:p-4 max-[400px]:p-2">
+      <div class="flex justify-start items-center">
+        <img src="/logo.jpg" alt="aden's logo" class="w-40 min-[2000px]:w-52 max-sm:w-28 bg-transparent h-6" />
+      </div>
+
+      <ul class='flex flex-1 justify-center items-center list-none max-md:hidden'>
+        <li class='my-0 mx-4 cursor-pointer hover:text-white leading-6 text-xl font-sans font-medium text-[#FEFEFE]'>
+          <a href="#home">Home</a>
+        </li>
+        <li class='my-0 mx-4 cursor-pointer hover:text-white leading-6 text-xl font-sans font-normal text-yarg'>
+          <a href="#practice-areas">Practice areas</a>
+        </li>
+        <li class='my-0 mx-4 cursor-pointer hover:text-white leading-6 text-xl font-sans font-normal text-yarg'>
+          <a href="#about">About Us</a>
+        </li>
+        <li class='my-0 mx-4 cursor-pointer hover:text-white leading-6 text-xl font-sans font-normal text-yarg'>
+          <a href="#blog">Blog</a>
+        </li>
+        <!-- <li class='my-0 mx-4 cursor-pointer hover:text-white leading-6 text-xl font-sans font-normal text-yarg'>
             <a href="#">Awards</a>
-          </li>
-        </ul>
-      </nav>
+          </li> -->
+      </ul>
 
-    </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+      <a href="#get-in-touch"
+        class="flex text-[#d2d2d2] text-xl leading-6 items-center max-md:hidden px-6 py-3 focus:outline-none border-solid border border-[#d2d2d2] bg-transparent rounded-2xl outline-none capitalize">
+        get in touch
+
+        <!-- icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-4 h-4 ml-1 text-[#d2d2d2]">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+        </svg>
+      </a>
+
+      <div class="flex md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-white text-xl cursor-pointer h-8" id="hamburgerIcon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <div id="mobileMenu" class="!hidden fixed inset-0 w-full h-[100svh] bg-ground transition duration-500 ease-in-out flex-col z-10 flex justify-center items-center slide-bottom">
+          <ul class='flex flex-1 justify-center items-center list-none flex-col'>
+            <li class='text-2xl text-center m-8  cursor-pointer font-cormorant hover:text-white leading-7 font-normal text-golden'>
+              <a href="#">Home</a>
+            </li>
+            <li class='text-2xl text-center m-8  cursor-pointer leading-7 font-cormorant hover:text-white/90 font-normal text-white capitalize'>
+              <a href="#">Practice areas</a>
+            </li>
+            <li class='text-2xl text-center m-8  cursor-pointer leading-7 font-cormorant hover:text-white/90 font-normal text-white capitalize'>
+              <a href="#"Company
+            </a>
+            </li>
+            <li class='text-2xl text-center m-8  cursor-pointer leading-7 font-cormorant hover:text-white/90 font-normal text-white capitalize'>
+              <a href="#">Contactg</a>
+            </li>
+            <li class='text-2xl text-center m-8  cursor-pointer leading-7 font-cormorant hover:text-white/90 font-normal text-white capitalize'>
+              <a href="#">Awards</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+
+    <!-- INTRO SECTION -->
+
+    <section id="intro" class="bg-ground w-full text-center py-9 px-5 mx-auto space-y-3 pt-6 max-w-3xl">
+
+      <img src="/intro.png" alt="Intro image" class="rounded-lg h-12 w-36 bg-[#0200001a] mx-auto block">
+
+      <h1 class="text-[#fefefe] font-extrabold font-rubik text-center text-4xl -tracking-[3.5%] !mt-6">
+        Advocating for local and international clients since '90s
+      </h1>
+
+      <p class="text-[#C4C4C4] font-rubik text-xl text-center leading-9 font-normal">
+        We offer top level legal and business services to both local and international clients. Our expertise on legal
+        issues cuts across borders.
+      </p>
+
+      <button class="bg-[#FEFEFE] py-5 px-14 rounded-2xl gap-2 flex justify-center items-center mx-auto !mt-8">
+        <span class="text-[#121212] font-medium text-2xl leading-9">
+          Request a consultation
+        </span>
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 inline-block">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+          </svg>
+        </span>
+      </button>
+    </section>
+
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>

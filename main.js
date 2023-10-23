@@ -1,7 +1,9 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import { setupCounter } from './counter.js';
+
+let hamburgerMenuOpen = false;
 
 // document.querySelector('#app').innerHTML = `
 //   <div>
@@ -20,5 +22,16 @@ import { setupCounter } from './counter.js'
 //     </p>
 //   </div>
 // `
+
+
+
+const hamburgerIconEl = document.getElementById('hamburgerIcon');
+const mobileMenuEl = document.getElementById('mobileMenu');
+
+hamburgerIconEl.addEventListener('click', () => {
+    console.log(hamburgerMenuOpen);
+    hamburgerMenuOpen = !hamburgerMenuOpen
+    mobileMenuEl.classList.toggle('!hidden');
+});
 
 setupCounter(document.querySelector('#counter'))
