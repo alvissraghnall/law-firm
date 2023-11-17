@@ -504,7 +504,7 @@
     </section>
 
     <section id="experts" class="bg-white w-full py-14 px-24 max-md:py-12 max-md:px-6">
-      <div class="grid grid-cols-3 grid-rows-3 gap-8">
+      <div class="grid grid-cols-3 grid-rows-3 gap-8 gap-x-16">
         <div class="w-96 h-60 rounded-2xl max-md:w-full max-md:relative max-md:col-span-3 max-md:order-3">
           <img src="/team-cards-1.png" alt="" class="w-full h-full">
           <div class="flex items-center justify-between md:hidden absolute bottom-5 text-[#FEFEFE] w-full px-4">
@@ -640,11 +640,11 @@
 
     <section id="reviews" class="bg-white w-full py-14 max-md:py-12">
       <h3
-        class="text-3xl text-center leading-10 font-bold text-[#121212] -tracking-wider mb-4 max-md:font-semibold max-md:text-[22.5px] max-md:leading-7">
+        class="text-3xl text-center leading-10 font-bold text-[#121212] -tracking-wider mb-4 max-md:font-semibold max-md:text-[22.5px] max-md:leading-7 max-md:px-5">
         Here's what some of
         our clients have to say</h3>
 
-      <div class="flex h-[576px] relative max-md:flex-col">
+      <div class="flex md:h-[576px] relative max-md:flex-col">
         <div class="bg-[#121212] space-y-3 flex-1">
           <!-- <svg class="absolute left-20 top-16 max-md:left-12 max-md:top-8" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -656,7 +656,7 @@
             <div class="space-y-2">
               <div class="relative overflow-hidden mx-auto">
                 <div id="sliderHolder"
-                  class="transition-all duration-1000 ease-in-out hover:-translate-y-1 delay-100 relative">
+                  class="transition-all duration-1000 ease-in-out hover:-translate-y-1 delay-100">
 
 
                   <div class="space-y-3 slide">
@@ -734,17 +734,17 @@
 
     </section>
 
-    <section id="hire-an-expert" class="bg-white w-full py-20 px-28 max-md:py-12 max-md:px-6">
-      <div class="flex items-center gap-4">
-        <div class="flex-1">
+    <section id="hire-an-expert" class="bg-white w-full py-20 px-28 max-md:pb-5 max-md:pt-0 max-md:px-6">
+      <div class="flex items-center gap-6 max-md:flex-col">
+        <div class="flex-1 max-md:text-center">
           <div class="space-y-10">
             <div class="space-y-10">
 
               <div class="space-y-5">
-                <h2 class="font-bold text-3xl leading-10 text-[#121212] -tracking-wider">
+                <h2 class="font-bold max-md:font-semibold text-3xl max-md:text-[22px] max-md:leading-7 leading-10 text-[#121212] -tracking-wider">
                   If you are in trouble our lawyers can guide you
                 </h2>
-                <p class="text-[#555555] font-normal text-[22px] leading-9">
+                <p class="text-[#555555] font-normal text-[22px] leading-9 max-md:text-base max-md:leading-[26px] max-md:-tracking-[0.04em]">
                   Whether you're grappling with personal matters
                   or complex business issues, rest assured that our
                   dedicated legal experts are committed to charting
@@ -752,48 +752,49 @@
                 </p>
               </div>
               <a href="#hire-an-expert"
-                class="my-4 border border-[#FEFEFE] border-solid text-[#FEFEFE] bg-[#121212] py-4 pr-7 pl-9 rounded-2xl w-fit flex text-2xl leading-9 items-center focus:outline-none outline-none font-medium font-rubik -tracking-wider gap-x-1">
-                <span>Hire an expert</span>
+                class="my-4 border border-[#FEFEFE] border-solid text-[#FEFEFE] bg-[#121212] py-4 pr-7 pl-9 rounded-2xl w-fit flex text-2xl leading-9 items-center focus:outline-none outline-none font-medium font-rubik -tracking-wider gap-x-1 max-md:mx-auto">
+                <span class="max-md:font-medium max-md:text-base max-md:leading-5 max-md:-tracking-wider">Hire an expert</span>
 
                 <!-- icon -->
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="w-5 h-5 ml-1 text-[#fefefe]">
+                  stroke="currentColor" class="w-5 h-5 ml-1 text-[#fefefe] max-md:h-4 max-md:w-4">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                 </svg>
               </a>
             </div>
 
-            <div class="flex justify-start items-center gap-4">
-              <img src="/tick-circle.png" alt="" class="w-6 h-6">
-              <span class="text-[#555555] font-normal text-[22px] leading-8 -tracking-wider">Reasonable prices</span>
-              <span class="text-[#555555] font-normal text-[22px] leading-8 -tracking-wider">Experienced lawyers</span>
+            <div class="flex justify-center md:justify-start items-center gap-4 max-md:gap-2">
+              <img src="/tick-circle.png" alt="" class="w-6 h-4 max-md:w-4 md:h-6">
+              <span class="text-[#555555] font-normal text-[22px] max-md:text-sm leading-8 max-md:leading-[18px] -tracking-wider max-md:mr-4">Reasonable prices</span>
+              <img src="/tick-circle.png" alt="" class="w-4 h-4 hidden max-md:block">
+              <span class="text-[#555555] font-normal text-[22px] max-md:text-sm leading-8 max-md:leading-[18px] -tracking-wider">Experienced lawyers</span>
             </div>
           </div>
         </div>
         <div class="flex-1">
-          <div class="grid grid-cols-3 w-full gap-4">
-            <div class="grid gap-8 col-span-2 grid-rows-2">
-              <div class="grid grid-cols-2 gap-4">
+          <div class="grid grid-cols-3 max-md:grid-rows-2 max-md:grid-cols-none w-full gap-4 max-md:hidden">
+            <div class="grid gap-8 gap-y-4 col-span-2 grid-rows-2">
+              <div class="grid grid-cols-2 gap-4 max-md:h-36">
                 <div>
-                  <img class="h-auto max-w-full rounded-lg"
-                    src="/hire-2.png" alt="">
+                  <img class="md:h-auto max-w-full rounded-lg"
+                    src="/hire-2.png" alt="" />
                 </div>
                 <div>
-                  <img class="h-auto max-w-full rounded-lg mt-3"
-                    src="/hire-4.png" alt="">
+                  <img class="md:h-auto max-w-full rounded-lg md:mt-3"
+                    src="/hire-4.png" alt="" />
                 </div>
               </div>              
-              <div>
-                <img class="h-auto max-w-full rounded-lg mt-[18px]"
+              <div class="md:mt-1.5">
+                <img class="h-auto max-w-full rounded-lg"
                   src="/hire-1.png" alt="">
               </div>
             </div>
-            <div class="grid gap-4 col-span-1">
-              <div>
-                <img class="h-auto max-w-full rounded-lg mt-5"
+            <div class="grid gap-4 gap-y-2 col-span-1">
+              <div class="md:mt-6 md:h-fit">
+                <img class="h-auto max-w-full rounded-lg"
                   src="/hire-3.png" alt="">
               </div>
-              <div>
+              <div class="md:-mt-8">
                 <img class="h-auto max-w-full rounded-lg"
                   src="/hire-5.png" alt="">
               </div>
@@ -802,22 +803,59 @@
                   src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
               </div> -->
             </div>
-            <!-- <div class="grid gap-4">
+          </div>
+          <div class="flex flex-col w-full gap-4 md:hidden">
+            <div class="flex gap-4 flex-col">
+              <div class="grid grid-cols-2 gap-4 max-md:h-36 mx-auto">
+                <div>
+                  <img class="md:h-auto max-w-full rounded-lg"
+                    src="/hire-1-sm.png" alt="" />
+                </div>
+                <div>
+                  <img class="md:h-auto max-w-full rounded-lg"
+                    src="/hire-2-sm.png" alt="" />
+                </div>
+              </div>              
+              <div class="">
+                <img class="h-auto max-w-full rounded-lg"
+                  src="/hire-3-sm.png" alt="">
+              </div>
+            </div>
+            <div class="grid gap-4 grid-cols-2">
               <div>
                 <img class="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+                  src="/hire-4-sm.png" alt="">
               </div>
-              <div>
-                <img class="h-auto max-w-full rounded-lg"
-                  src="/hire-5.png" alt="">
+              <div class="flex flex-col gap-4">
+                <div>
+                  <img class="h-auto max-w-full rounded-lg"
+                    src="/hire-5-sm.png" alt="">
+                </div>
+                <div>
+                  <img class="h-auto max-w-full rounded-lg"
+                    src="/hire-6-sm.png" alt="">
+                </div>
               </div>
-              <div>
-                <img class="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
-              </div>
-            </div> -->
+              
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="hear-our-clients" class="bg-white w-full py-20 px-28 max-md:pb-5 max-md:pt-0 max-md:px-6">
+      <h2 class="text-center font-bold text-[32px] leading-10 -tracking-wider text-[#848484]">
+        HEAR FROM OUR CLIENTS
+      </h2>
+
+      <div class="grid grid-cols-2 gap-4">
+        <div class="col-span-2">
+
+        </div>
+        <div class="col-span-3">
+          
+        </div>
+
       </div>
     </section>
 
