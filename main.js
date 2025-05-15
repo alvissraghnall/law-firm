@@ -18,37 +18,50 @@ const handleClick = (direction) => {
     direction === "left" ? slideIndex = slideIndex > 0 ? slideIndex - 1 : 6 : slideIndex = slideIndex < 6 ? slideIndex + 1 : 0;
 };
 
-const showSlide = idx => {
-    slides.forEach((slide, i) => {
-        // const transformVal = `translateX(${100 * (i - idx)}%)`;
-        if (i === idx) {
-            slide.classList.remove("-translate-x-full");
-            slide.style.display = 'block';
-        }
-        else {
-            slide.classList.add("-translate-x-full");
-            slide.style.display = 'none';
-        }
-        // slide.style.transform = transformVal;
-    });
-
-    indicators.forEach((indicator, i) => {
-        // sliderHolderEl.style.transform = `translateX(${slideIndex * -100}vw)`;
-
-        if (i === idx) indicator.classList.add('active');
-        else indicator.classList.remove('active');
-    });
+// Initialize slider
+function initSlider() {
+  if (slides.length > 0) {
+    slides[0].classList.add('active');
+    indicators[0].classList.add('active');
+  }
+  
+  // Auto-rotate every 5 seconds
+  setInterval(() => {
+    nextSlide();
+  }, 5000);
 }
 
+function showSlide(idx) {
+  // Wrap around if at end
+  if (idx >= slides.length) slideIndex = 0;
+  if (idx < 0) slideIndex = slides.length - 1;
+  
+  // Update slides
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === slideIndex);
+  });
+  
+  // Update indicators
+  indicators.forEach((indicator, i) => {
+    indicator.classList.toggle('ind-active', i === slideIndex);
+  });
+}
+
+function nextSlide() {
+  slideIndex++;
+  showSlide(slideIndex);
+}
+
+// Add click events to indicators
 indicators.forEach((indicator, i) => {
-    indicator.addEventListener('click', () => {
-        slideIndex = i;
-        showSlide(slideIndex);
-    });
+  indicator.addEventListener('click', () => {
+    slideIndex = i;
+    showSlide(slideIndex);
+  });
 });
 
-showSlide(slideIndex);
-
+// Initialize on load
+document.addEventListener('DOMContentLoaded', initSlider);
 
 // document.querySelector('#app').innerHTML = `
 //   <div>
@@ -83,10 +96,5 @@ hamburgerIconEl.addEventListener('click', () => {
     }
 });
 
-
-
-window.addEventListener("DOMContentLoaded", ev => {
-    sliderHolderEl.style.transform = `translateX(${slideIndex * -100}vw)`;
-});
 
 setupCounter(document.querySelector('#counter'))
