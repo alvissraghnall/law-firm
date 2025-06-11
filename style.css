@@ -26,10 +26,6 @@
   }
 }
 
-.active {
+.ind-active {
   @apply bg-[#fefefe];
-}
-
-.slide {
-  @apply duration-700 ease-in-out transition-all;
 }
